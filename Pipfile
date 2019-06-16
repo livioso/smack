@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+python-periphery = "==1.1.1"
+slacker = "==0.13.0"
+python-gsmmodem-new = {file = "https://github.com/livioso/python-gsmmodem/archive/master.zip"}
+
+[requires]
+python_version = "3.6"
