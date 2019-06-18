@@ -29,7 +29,7 @@ def main():
         incomingCallCallbackFunc=handle_call,
     ).connect(PIN)
 
-    logger.info("✓ Waiting for calls / sms...")
+    logger.info(" ✓ Waiting for calls / sms...")
     Event().wait()
 
 
