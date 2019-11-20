@@ -22,12 +22,18 @@ def main():
     init_modem()
     time.sleep(POST_INIT_DELAY)
 
-    GsmModem(
+    modem = GsmModem(
         PORT,
         BAUDRATE,
         smsReceivedCallbackFunc=handle_sms,
         incomingCallCallbackFunc=handle_call,
-    ).connect(PIN)
+    )
+    
+    modem.connect(PIN)
+    
+    # prevent `SMS FULL` URC, just process them
+    # now if we still have old unprocessed SMS
+    modem.processStoredSms()
 
     logger.info(" ✓ Waiting for calls / sms...")
     Event().wait()
