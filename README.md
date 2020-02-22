@@ -16,7 +16,7 @@ Built this after I recieved an expensive bill because a service I used only offe
 
 ## Provision a new device
 
-I use [balena.io](https://www.balena.io) to manage my fleet of devices.
+I use [balena.io](https://www.balena.io) to manage my fleet of devices which makes it super easy to manage my fleet:
 
 - Create Balena project.
 - Add balena remote and `git push balena master`.
