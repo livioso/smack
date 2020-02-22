@@ -1,6 +1,6 @@
 # Smack
 
-Forward SMS and calls from any SIM card to Slack.
+📲 Forward SMS and calls from any SIM card to Slack.
 
 
 ## Motivation
